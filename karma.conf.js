@@ -12,9 +12,10 @@ module.exports = function(config){
       {pattern: 'app/bower_components/angular-mocks/angular-mocks.js', included: false},
       {pattern: 'app/components/**/*.js', included: false},
       {pattern: 'app/view*/**/*.js', included: false},
+      {pattern: 'test/unit/*.js', included: false},
       {pattern: 'app/app.js', included: false},
       // needs to be last http://karma-runner.github.io/0.12/plus/requirejs.html
-      'app/require-config.js'
+      'require-config.js'
     ],
 
     autoWatch : true,
